@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./test.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">Vel<span>o</span></div>
+
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="nav-menu-wrapper" id="navMenuWrapper">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-btn">Get Started</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Smart Solutions <br>For Modern <span>Brands</span></h1>
+            <p>We build tailor-made digital strategies and beautiful high-performance web products engineered to
+                accelerate efficiency and scale your corporate growth.</p>
+            <div class="hero-btns">
+                <a href="#about" class="btn btn-dark">Discover More <span><i class="fa-solid fa-arrow-right"
+                            style="color: rgb(255, 255, 255);"></i></span></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container reveal">
+            <div class="about-text">
+                <div class="section-badge">Who We Are</div>
+                <h2 class="section-title">We Drive <span>Innovation</span></h2>
+                <p>We are an elite team of tech innovators and strategic thinkers committed to executing high-impact
+                    solutions for businesses operating in today's dynamic markets.</p>
+                <p>By blending technological engineering with clean, human-centered UI/UX layout design, we empower
+                    corporations to streamline operational ecosystems and deliver outstanding user journeys.</p>
+            </div>
+            <div class="about-image">
+                <img src="./media/abute_image.jpg" alt="Creative workspace">
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="reveal">
+            <div class="section-badge">What We Do</div>
+            <h2 class="section-title">Premium <span>Services</span></h2>
+            <p class="section-subtitle">Comprehensive, future-ready services mapped perfectly to scale your commercial
+                infrastructure.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card reveal delay-1">
+                <div class="card-image-wrapper">
+                    <img src="./media/service1.jpg" alt="Custom Software">
+                </div>
+                <div class="card-content">
+                    <h3>Custom Software</h3>
+                    <p>Developing hyper-scalable, responsive, and robust web applications powered by optimized
+                        architectures and ultra-clean codebases.</p>
+                </div>
+            </div>
+
+            <div class="service-card reveal delay-2">
+                <div class="card-image-wrapper">
+                    <img src="./media/service2.jpg" alt="Brand Identity">
+                </div>
+                <div class="card-content">
+                    <h3>Brand Identity</h3>
+                    <p>Designing deeply impactful visual identities, wireframes, and interface flows that effortlessly
+                        retain modern corporate users.</p>
+                </div>
+            </div>
+
+            <div class="service-card reveal delay-3">
+                <div class="card-image-wrapper">
+                    <img src="./media/service3.jpg" alt="Growth Consulting">
+                </div>
+                <div class="card-content">
+                    <h3>Growth Consulting</h3>
+                    <p>Utilizing high-end market analytics to formulate automated conversion loops designed to optimize
+                        your digital ROI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container reveal">
+            <div class="contact-info">
+                <div class="section-badge">Contact</div>
+                <h2 class="section-title">Start Your Project</h2>
+                <p>Have a complex technical puzzle or a transformative digital concept? Partner with us today. Fill out
+                    the form, and our engineering desk will reach out shortly.</p>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <span>Corporate Park, Suite 402, Tech Hub</span>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <span>+1 (800) 123-4567</span>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <span>contact@velopremium.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <form class="contact-form" id="contactForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="f_name">First Name</label>
+
+                            <input type="text" id="f_name" name="first_name" placeholder="Enter first name"
+                                 required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="l_name">Last Name</label>
+
+                            <input type="text" id="l_name" name="last_name" placeholder="Enter last name"
+                                 required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+
+                        <input type="email" id="email" name="email" placeholder="john@company.com" 
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subj">Subject</label>
+
+                        <input type="text" id="subj" name="subject" placeholder="Describe your service requirements...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        Send Message<span><i class="fa-solid fa-arrow-right"
+                            style="color: rgb(255, 255, 255);"></i></span>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">Vel<span>o</span></div>
+                <p>Next-generation digital solutions engineered to empower ambitious corporate identities and maximize
+                    commercial growth trajectories.</p>
+            </div>
+            <div class="footer-links-col">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Desk</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Velo Premium. All rights reserved.</p>
+            <p>Designed with precision.</p>
+        </div>
+    </footer>
+
+    <script src="./test.js"></script>
+</body>
+
+</html>
