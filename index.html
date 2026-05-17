@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velo</title>
+    <link rel="icon" href="./media/icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Syne:wght@400..800&family=Work+Sans:wght@300..900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&display=swap" rel="stylesheet">
-
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -51,7 +52,7 @@
     </section>
 
     <section id="about" class="about">
-        <div class="about-container reveal">
+        <div class="about-container">
             <div class="about-text">
                 <div class="section-badge">Who We Are</div>
                 <h2 class="section-title">We Drive <span>Innovation</span></h2>
@@ -66,8 +67,8 @@
         </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="reveal">
+    <section class="services" id="services">
+        <div>
             <div class="section-badge">What We Do</div>
             <h2 class="section-title">Premium <span>Services</span></h2>
             <p class="section-subtitle">Comprehensive, future-ready services mapped perfectly to scale your commercial
@@ -75,7 +76,7 @@
         </div>
 
         <div class="services-grid">
-            <div class="service-card reveal delay-1">
+            <div class="service-card ">
                 <div class="card-image-wrapper">
                     <img src="./media/service1.jpg" alt="Custom Software">
                 </div>
@@ -86,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="service-card reveal delay-2">
+            <div class="service-card">
                 <div class="card-image-wrapper">
                     <img src="./media/service2.jpg" alt="Brand Identity">
                 </div>
@@ -97,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="service-card reveal delay-3">
+            <div class="service-card">
                 <div class="card-image-wrapper">
                     <img src="./media/service3.jpg" alt="Growth Consulting">
                 </div>
@@ -110,8 +111,8 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="contact-container reveal">
+    <section class="contact" id="contact">
+        <div class="contact-container">
             <div class="contact-info">
                 <div class="section-badge">Contact</div>
                 <h2 class="section-title">Start Your Project</h2>
@@ -135,49 +136,37 @@
             </div>
 
             <div class="contact-form-card">
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form">
 
                     <div class="form-row">
-
                         <div class="form-group">
                             <label for="f_name">First Name</label>
-
-                            <input type="text" id="f_name" name="first_name" placeholder="Enter first name"
-                                 required>
+                            <input type="text" id="f_name" name="first_name" placeholder="Enter first name">
                         </div>
 
                         <div class="form-group">
                             <label for="l_name">Last Name</label>
-
-                            <input type="text" id="l_name" name="last_name" placeholder="Enter last name"
-                                 required>
+                            <input type="text" id="l_name" name="last_name" placeholder="Enter last name" >
                         </div>
-
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email</label>
-
-                        <input type="email" id="email" name="email" placeholder="john@company.com" 
-                            required>
+                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
                     </div>
 
                     <div class="form-group">
                         <label for="subj">Subject</label>
-
                         <input type="text" id="subj" name="subject" placeholder="Describe your service requirements...">
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-
-                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."
-                            required></textarea>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." ></textarea>
                     </div>
 
                     <button type="submit" class="submit-btn">
-                        Send Message<span><i class="fa-solid fa-arrow-right"
-                            style="color: rgb(255, 255, 255);"></i></span>
+                        Send Message<span><i class="fa-solid fa-arrow-right" style="color: rgb(255, 255, 255);"></i></span>
                     </button>
 
                 </form>
@@ -203,11 +192,11 @@
             </div>
             <div class="footer-links-col">
                 <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-square-linkedin"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
-                </div>
+<div class="social-links">
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a> 
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>     
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>     
+</div>
             </div>
         </div>
         <div class="footer-bottom">

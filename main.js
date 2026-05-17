@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navMenuWrapper = document.getElementById('navMenuWrapper');
 
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-  
     const navLinks = document.querySelectorAll('.nav-links a, .nav-btn');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -22,31 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    
 
-    function revealElements() {
-        const reveals = document.querySelectorAll('.reveal');
-        reveals.forEach(element => {
-            const windowHeight = window.innerHeight;
-            const elementTop = element.getBoundingClientRect().top;
-            const elementVisible = 100; 
-
-            if (elementTop < windowHeight - elementVisible) {
-                element.classList.add('active');
-            }
-        });
-    }
-
-
-    window.addEventListener('scroll', revealElements);
-    window.addEventListener('load', revealElements);
-
-   
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault(); 
-            alert('Thank you! Your message has been sent successfully.');
-            contactForm.reset();
-        });
-    }
+    
 });
